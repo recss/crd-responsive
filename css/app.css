@@ -1,0 +1,155 @@
+body {
+	box-sizing: border-box;
+	font-family: calibri;
+	line-height: 1.25;
+	color: #333333;
+	background-color: #f0f0f0;
+}
+
+img {
+	max-width: 100%;
+}
+
+.main {
+	background-color: #fefefe;
+	border: 1px solid #d3d3d3;
+	border-radius: 5px;
+	padding: 2rem;
+	margin: 2rem;
+}
+
+.celeb-input {
+	border-bottom: 1px solid #d3d3d3;
+	padding: 0.5rem;
+}
+
+.celeb-input label {
+	display: block;
+	font-size: 90%;
+	color: #888888;
+	text-align: center;
+	margin: 0.75rem auto;
+}
+
+.celeb-input input not [type="submit"] {
+	border: 1px solid #888888;
+	border-radius: 3px;
+	padding: 0.15rem;
+}
+
+.btn {
+	display: block;
+	background-image: linear-gradient(to bottom, #4e92ba, #307ca9);
+	color: white;
+	padding: 2px 10px 2px 10px;
+	border: 1px solid;
+	border-color: #307ca9 #307ca9 #1f506d;
+	border-radius: 3px;
+	margin: 0.25rem auto;
+	overflow: hidden;
+}
+
+.celeb-card-holder {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+.celeb-card {
+	display: block;
+	min-height: 100%;
+	overflow: auto;
+	width: 95%;
+	border: 1px solid #d3d3d3;
+	padding: 0 0.25rem;
+	margin: 0.5rem 1%;
+}
+
+.celeb-card:hover {
+	opacity: 0.85;
+	box-shadow: 0 0 1em #d3d3d3;
+}
+
+.celeb-card p {
+	display: inline-block;
+	font-weight: bold;
+}
+
+.celeb-pic-holder {
+	padding-top: 1rem;
+}
+
+.celeb-card:hover .close-pic {
+	visibility: visible;
+	cursor: pointer;
+}
+
+.celeb-pic {
+	display: block;
+	max-height: 70px;
+	padding: 0.25rem;
+	border: 1px solid #d3d3d3;
+	margin: 0 auto;
+}
+
+.close-pic {
+	visibility: hidden;
+	float: right;
+	padding: 0.5rem 0.25rem;
+}
+
+@media (min-width: 425px) {
+	.celeb-input label {
+		text-align: left;
+	}
+
+	.btn {
+		margin: 0;
+		margin-left: 0.25rem;
+	}
+
+	.celeb-pic-holder {
+		padding: 0;
+	}
+
+	.celeb-pic {
+		display: inline-block;
+		float: left;
+		padding-right: 1rem;
+		border: 0;
+		border-right: 1px solid #d3d3d3;
+		margin: 0 0 0 0.25rem;
+	}
+}
+
+@media (min-width: 700px) {
+	.celeb-pic {
+		padding: 0.25rem;
+		padding-right: 0.5rem;
+		margin: 0 0.5%;
+	}
+
+	.celeb-card {
+		display: inline-block;
+		width: 45%;
+		padding: 0 auto;
+		margin: 0.25rem 0.5%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.celeb-card {
+		display: inline-block;
+		width: 30%;
+		padding: 0 auto;
+		margin: 0.25rem 0.5%;
+	}
+}
+
+@media (min-width: 1500px) {
+	.celeb-card {
+		display: inline-block;
+		width: 20%;
+		padding: 0 auto;
+		margin: 0.25rem 0.5%;
+	}
+}
